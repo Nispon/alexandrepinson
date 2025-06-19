@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accueil - Sound designer, composer & technician</title>
+
+    <!-- Polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Italiana:wght@400;700&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+
+    <style>
+        .top-bar {
+    width: 100%;
+    background-color: #181818;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Italiana', serif;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+
+
+.music-player {
+  font-family: 'Italiana', serif;
+  font-size: 1.5em; 
+  color: #fff;      
+}
+        body {
+            background-color: #202020;
+            color: #eee;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+
+
+        h1 {
+            position: relative;
+            z-index: 1;
+            font-family: 'Italiana', serif;
+            font-size: 60px;
+            line-height: 1.2em;
+            white-space: pre-line;
+            text-align: center;
+            margin-bottom: 5px;
+            color: white;  /* au cas où */
+            padding: 0 20px; /* un peu de marge latérale */
+            background: transparent;
+    }
+
+
+
+
+
+
+    .title-container {
+  position: relative;    /* position relative pour que la vidéo en absolute soit relative à ce bloc */
+  width: 100%;
+  max-width: 1920px;      /* limite la largeur pour que ça soit joli */
+  margin: 0 auto 20px;   /* centre horizontalement avec marge en bas */
+  height: 800px;         /* hauteur du bloc (ajuste selon la taille de ta vidéo et h1) */
+  overflow: hidden;      /* cache ce qui dépasse */
+  border-radius: 8px;    /* optionnel, coins arrondis */
+}
+
+         .separator{
+            border: none;
+            border-bottom: 1px solid white;
+            width: 35%;
+            margin: 40px auto 20px auto; /* top margin = 40px, bottom margin = 20px */
+}
+
+
+.video-background {
+  position: absolute;    /* position absolue dans le conteneur */
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* la vidéo remplit bien tout le bloc */
+  filter: brightness(0.4); /* assombrit la vidéo pour mieux voir le texte */
+  pointer-events: none;  /* la vidéo ne gêne pas les clics */
+  z-index: 0;            /* derrière le texte */
+}
+
+.title-container h1 {
+  position: relative;    /* devant la vidéo */
+  z-index: 1;
+  font-family: 'Italiana', serif;
+  font-size: 100px;
+  line-height: 1.2em;
+  white-space: pre-line;
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px;    /* un peu d'espace autour du texte */
+  color: white;
+  background: transparent;
+}
+.title-container hr.separator {
+  position: relative;
+  z-index: 1; /* plus que la vidéo */
+  margin-top: 10px; /* espace au dessus */
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+        .description {
+            font-family: 'Urbanist', serif;
+            max-width: 600px;
+            font-size: 1.1em;
+            font-weight: 400;
+            line-height: 1.2em;
+            white-space: pre-line;
+            text-align: center;
+            color: #ccc;
+        }
+
+
+
+        .music-player {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+
+
+        .music-player h2 {
+            color: #eee;
+            margin-bottom: 20px;
+        }
+
+
+
+        iframe {
+            max-width: 100%;
+            border: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top-bar">Alexandre PINSON</div>
+
+    <div class="title-container">
+  <video autoplay muted loop playsinline class="video-background">
+    <source src="Images/Illustrations/MODULAR_LIGHTS_SLOW.mp4" type="video/mp4" />
+    <!-- Remplace chemin/vers/ta-video.mp4 par le vrai chemin de ta vidéo -->
+  </video>
+  <h1>&#10;Sound designer,&#10;composer&#10;& technician&#10;</h1>
+   <hr class="separator">
+</div>
+
+   
+
+    <div class="description">
+        Who am I ?&#10;&#10;
+        Fench sound technician/engineer, sound designer, and composer... in short: passionate about all things audio.&#10;
+        I work both in the studio and on location, contributing to projects in audio, video, music, and podcasting.&#10;
+        On the side, I compose and produce under the name Chaffinch or Pinson, crafting a sound universe where beatmaking meets sound design.&#10;
+        My goal is to bring ideas to life through sound with passion, creativity, and sensitivity.
+    </div>
+</html>
+
+<section class="music-player" style="margin-top: 40px; text-align: center;">
+    <h2 style="color: #eee; margin-bottom: 20px;">Listen to my music</h2>
+    <iframe width="100%" height="150" scrolling="no" frameborder="no" allow="autoplay" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2116196736&color=%23343434&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+</iframe>
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+    <a href="https://soundcloud.com/pinsonpinsonpinson" title="Pinson" target="_blank" style="color: #cccccc; text-decoration: none;">Pinson</a> · <a href="https://soundcloud.com/pinsonpinsonpinson/le-oui" title="Le oui" target="_blank" style="color: #cccccc; text-decoration: none;">Le oui</a>
+</div>
+        <!-- Exemple d'intégration :
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ton-profil/ta-piste"></iframe>
+        -->
+    </div>
+</section>
